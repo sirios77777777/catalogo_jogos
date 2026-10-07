@@ -1,0 +1,28 @@
+body{
+padding: 20px;
+background-color: rgb(102, 123, 141);
+color: black;
+}
+
+.catalogo{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.catalogo1{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.tab{
+    background-color:rgb(123, 160, 209) ;
+    padding: 12px;
+    border-radius: 20px;
+
+}
+
+.pagina{
+    font-size: 30px;
+}
