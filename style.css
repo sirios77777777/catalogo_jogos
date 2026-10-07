@@ -1,28 +1,65 @@
-body{
-padding: 20px;
-background-color: rgb(102, 123, 141);
-color: black;
-}
+ body {
+margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #eaf4ff;
+            color: #222;
+        }
 
-.catalogo{
-    display: flex;
-    justify-content: space-between;
+        /* Cabeçalho */
+        header {
+            background-color: #0066cc;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
 
-}
+        header h1 {
+            margin: 0;
+        }
 
-.catalogo1{
-    display: flex;
-    align-items: center;
-    gap: 20px;
-}
+        header p {
+            margin-bottom: 0;
+        }
 
-.tab{
-    background-color:rgb(123, 160, 209) ;
-    padding: 12px;
-    border-radius: 20px;
+        /* Área dos jogos */
+        .catalogo {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 30px;
+        }
 
-}
+        /* Cartão de cada jogo */
+        .jogo {
+            background-color: white;
+            width: 250px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px #999;
+        }
 
-.pagina{
-    font-size: 30px;
-}
+        .jogo h2 {
+            color: #0066cc;
+        }
+
+        .nota {
+            color: #ff9800;
+            font-size: 20px;
+        }
+
+        .categoria {
+            background-color: #0066cc;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            display: inline-block;
+        }
+
+        /* Rodapé */
+        footer {
+            background-color: #0066cc;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
