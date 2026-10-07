@@ -1,183 +1,231 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Catálogo Gamer</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- Cabeçalho -->
     <header>
 
-        <h1>🎮 Catálogo Gamer</h1>
+        <div class="logo">
+            🎮 Catálogo Gamer
+        </div>
 
-        <p>
-            Conheça os jogos, veja a nota e descubra qual combina com você.
-        </p>
+        <nav>
+            <button class="ativo">Todos</button>
+            <button>Aventura</button>
+            <button>Corrida</button>
+            <button>Esporte</button>
+            <button>Puzzle</button>
+        </nav>
 
     </header>
 
 
-    <!-- Jogos -->
-    <main class="catalogo">
+    <main>
 
-        <!-- Jogo 1 -->
-        <div class="jogo">
+        <h1>Nossos jogos</h1>
 
-            <h2>🐉 Dragões de Cristal</h2>
+        <p class="subtitulo">
+            Conheça os jogos, veja a nota e descubra qual combina com você.
+        </p>
 
-            <div class="nota">
-                ★★★★★
+
+        <div class="jogos">
+
+
+            <div class="card">
+
+                <div class="imagem azul">
+                    🐉
+                    <span class="nota">10</span>
+                </div>
+
+                <div class="informacoes">
+
+                    <h2>Dragões de Cristal</h2>
+
+                    <div class="estrelas">
+                        ★★★★★
+                    </div>
+
+                    <p>
+                        Explore ilhas flutuantes e treine seu próprio dragão.
+                    </p>
+
+                    <div class="etiquetas">
+                        <span>Aventura</span>
+                        <span>PC</span>
+                        <span>Console</span>
+                    </div>
+
+                </div>
+
             </div>
 
-            <p>
-                Explore ilhas flutuantes e treine seu próprio dragão.
-            </p>
-
-            <span class="categoria">
-                Aventura
-            </span>
-
-            <p>
-                💻 PC | 🎮 Console
-            </p>
-
-        </div>
 
 
-        <!-- Jogo 2 -->
-        <div class="jogo">
+            <div class="card">
 
-            <h2>🏎️ Turbo Rush</h2>
+                <div class="imagem verde">
+                    🛵
+                    <span class="nota">L</span>
+                </div>
 
-            <div class="nota">
-                ★★★★☆
+                <div class="informacoes">
+
+                    <h2>Turbo Rush</h2>
+
+                    <div class="estrelas">
+                        ★★★★☆
+                    </div>
+
+                    <p>
+                        Corridas rápidas em pistas malucas, sozinho ou com amigos.
+                    </p>
+
+                    <div class="etiquetas">
+                        <span>Corrida</span>
+                        <span>PC</span>
+                        <span>Celular</span>
+                    </div>
+
+                </div>
+
             </div>
 
-            <p>
-                Corridas rápidas em pistas malucas, sozinho ou com amigos.
-            </p>
-
-            <span class="categoria">
-                Corrida
-            </span>
-
-            <p>
-                💻 PC | 📱 Celular
-            </p>
-
-        </div>
 
 
-        <!-- Jogo 3 -->
-        <div class="jogo">
+            <div class="card">
 
-            <h2>⚽ Copa Craque</h2>
+                <div class="imagem azul2">
+                    ⚽
+                    <span class="nota">L</span>
+                </div>
 
-            <div class="nota">
-                ★★★★☆
+                <div class="informacoes">
+
+                    <h2>Copa Craque</h2>
+
+                    <div class="estrelas">
+                        ★★★★☆
+                    </div>
+
+                    <p>
+                        Monte seu time, marque gols e vire campeão do torneio.
+                    </p>
+
+                    <div class="etiquetas">
+                        <span>Esporte</span>
+                        <span>Console</span>
+                    </div>
+
+                </div>
+
             </div>
 
-            <p>
-                Monte seu time, marque gols e vire campeão do torneio.
-            </p>
-
-            <span class="categoria">
-                Esporte
-            </span>
-
-            <p>
-                🎮 Console
-            </p>
-
-        </div>
 
 
-        <!-- Jogo 4 -->
-        <div class="jogo">
+            <div class="card">
 
-            <h2>🧩 Quebra-Cabeça Mágico</h2>
+                <div class="imagem azul3">
+                    🧩
+                    <span class="nota">L</span>
+                </div>
 
-            <div class="nota">
-                ★★★☆☆
+                <div class="informacoes">
+
+                    <h2>Quebra-Cabeça Mágico</h2>
+
+                    <div class="estrelas">
+                        ★★★★★
+                    </div>
+
+                    <p>
+                        Resolva enigmas e desbloqueie portais secretos.
+                    </p>
+
+                    <div class="etiquetas">
+                        <span>Puzzle</span>
+                        <span>Celular</span>
+                    </div>
+
+                </div>
+
             </div>
 
-            <p>
-                Resolva enigmas e desbloqueie portais secretos.
-            </p>
-
-            <span class="categoria">
-                Puzzle
-            </span>
-
-            <p>
-                📱 Celular
-            </p>
-
-        </div>
 
 
-        <!-- Jogo 5 -->
-        <div class="jogo">
+            <div class="card">
 
-            <h2>🚀 Galáxia Zero</h2>
+                <div class="imagem azul4">
+                    🚀
+                    <span class="nota">12</span>
+                </div>
 
-            <div class="nota">
-                ★★★★★
+                <div class="informacoes">
+
+                    <h2>Galáxia Zero</h2>
+
+                    <div class="estrelas">
+                        ★★★★★
+                    </div>
+
+                    <p>
+                        Pilote uma nave, explore planetas e enfrente piratas espaciais.
+                    </p>
+
+                    <div class="etiquetas">
+                        <span>Aventura</span>
+                        <span>PC</span>
+                    </div>
+
+                </div>
+
             </div>
 
-            <p>
-                Pilote uma nave, explore planetas e enfrente piratas espaciais.
-            </p>
-
-            <span class="categoria">
-                Aventura
-            </span>
-
-            <p>
-                💻 PC
-            </p>
-
-        </div>
 
 
-        <!-- Jogo 6 -->
-        <div class="jogo">
+            <div class="card">
 
-            <h2>🏰 Reino em Blocos</h2>
+                <div class="imagem laranja">
+                    🏰
+                    <span class="nota">10</span>
+                </div>
 
-            <div class="nota">
-                ★★★★☆
+                <div class="informacoes">
+
+                    <h2>Reino em Blocos</h2>
+
+                    <div class="estrelas">
+                        ★★★★★
+                    </div>
+
+                    <p>
+                        Construa castelos, defenda seu reino e crie suas próprias regras.
+                    </p>
+
+                    <div class="etiquetas">
+                        <span>Aventura</span>
+                        <span>PC</span>
+                        <span>Celular</span>
+                    </div>
+
+                </div>
+
             </div>
 
-            <p>
-                Construa castelos, defenda seu reino e crie suas próprias regras.
-            </p>
-
-            <span class="categoria">
-                Aventura
-            </span>
-
-            <p>
-                💻 PC | 📱 Celular
-            </p>
 
         </div>
 
     </main>
 
-
-    <!-- Rodapé -->
-    <footer>
-
-        <p>
-            Projeto de aula de HTML e CSS • Catálogo Gamer
-        </p>
-
-    </footer>
-
 </body>
+
 </html>

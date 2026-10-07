@@ -1,65 +1,290 @@
- body {
-margin: 0;
-            font-family: Arial, sans-serif;
-            background-color: #eaf4ff;
-            color: #222;
-        }
+* {
+    box-sizing: border-box;
+}
 
-        /* Cabeçalho */
-        header {
-            background-color: #0066cc;
-            color: white;
-            text-align: center;
-            padding: 25px;
-        }
+body {
+    margin: 0;
+    background-color: #10121a;
+    color: white;
+    font-family: Arial, sans-serif;
+}
 
-        header h1 {
-            margin: 0;
-        }
 
-        header p {
-            margin-bottom: 0;
-        }
+/* CABEÇALHO */
 
-        /* Área dos jogos */
-        .catalogo {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 20px;
-            padding: 30px;
-        }
+header {
+    height: 55px;
+    border-bottom: 1px solid #282b38;
 
-        /* Cartão de cada jogo */
-        .jogo {
-            background-color: white;
-            width: 250px;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 3px 10px #999;
-        }
+    display: flex;
+    align-items: center;
 
-        .jogo h2 {
-            color: #0066cc;
-        }
+    padding: 0 25px;
+}
 
-        .nota {
-            color: #ff9800;
-            font-size: 20px;
-        }
 
-        .categoria {
-            background-color: #0066cc;
-            color: white;
-            padding: 5px 10px;
-            border-radius: 5px;
-            display: inline-block;
-        }
+.logo {
+    color: #72cfff;
+    font-size: 18px;
+    font-weight: bold;
 
-        /* Rodapé */
-        footer {
-            background-color: #0066cc;
-            color: white;
-            text-align: center;
-            padding: 15px;
-        }
+    margin-right: auto;
+}
+
+
+nav {
+    display: flex;
+    gap: 8px;
+}
+
+
+nav button {
+    border: none;
+    background-color: #1d2130;
+    color: #9da2b0;
+
+    padding: 7px 14px;
+
+    border-radius: 15px;
+
+    cursor: pointer;
+}
+
+
+nav button:hover {
+    background-color: #2b3040;
+}
+
+
+nav .ativo {
+    background-color: #73cfff;
+    color: #17202a;
+}
+
+
+/* CONTEÚDO */
+
+main {
+    max-width: 1000px;
+
+    margin: 25px auto;
+
+    padding: 0 20px;
+}
+
+
+h1 {
+    margin-bottom: 5px;
+
+    font-size: 26px;
+}
+
+
+.subtitulo {
+    color: #8e95a5;
+
+    font-size: 13px;
+
+    margin-bottom: 20px;
+}
+
+
+/* CARDS */
+
+.jogos {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 17px;
+}
+
+
+.card {
+    background-color: #202330;
+
+    border-radius: 10px;
+
+    overflow: hidden;
+}
+
+
+.imagem {
+    height: 105px;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    font-size: 48px;
+
+    position: relative;
+}
+
+
+.azul {
+    background-color: #3daee3;
+}
+
+
+.verde {
+    background-color: #19d9cc;
+}
+
+
+.azul2 {
+    background-color: #398bd2;
+}
+
+
+.azul3 {
+    background-color: #128fae;
+}
+
+
+.azul4 {
+    background-color: #159dc9;
+}
+
+
+.laranja {
+    background: linear-gradient(
+        120deg,
+        #f18b00 50%,
+        #12aaa9 50%
+    );
+}
+
+
+/* NOTA */
+
+.nota {
+    position: absolute;
+
+    right: 8px;
+    top: 8px;
+
+    background-color: #159fc3;
+
+    padding: 5px 7px;
+
+    border-radius: 5px;
+
+    font-size: 11px;
+
+    font-weight: bold;
+}
+
+
+/* INFORMAÇÕES */
+
+.informacoes {
+    padding: 10px 12px 12px;
+}
+
+
+h2 {
+    margin: 0;
+
+    font-size: 15px;
+}
+
+
+.estrelas {
+    color: #ffd21c;
+
+    font-size: 13px;
+
+    margin-top: 5px;
+}
+
+
+.informacoes p {
+    color: #979dac;
+
+    font-size: 12px;
+
+    line-height: 1.4;
+
+    min-height: 45px;
+}
+
+
+/* ETIQUETAS */
+
+.etiquetas {
+    display: flex;
+
+    gap: 6px;
+
+    flex-wrap: wrap;
+}
+
+
+.etiquetas span {
+    background-color: #303544;
+
+    color: #b8becb;
+
+    border-radius: 10px;
+
+    padding: 4px 8px;
+
+    font-size: 10px;
+}
+
+
+/* RODAPÉ */
+
+footer {
+    text-align: center;
+
+    color: #777e8f;
+
+    font-size: 11px;
+
+    margin-top: 60px;
+
+    margin-bottom: 20px;
+}
+
+
+/* CELULAR */
+
+@media (max-width: 750px) {
+
+    .jogos {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    header {
+        height: auto;
+
+        padding: 15px;
+
+        flex-wrap: wrap;
+
+        gap: 15px;
+    }
+
+    .logo {
+        width: 100%;
+    }
+
+}
+
+
+@media (max-width: 500px) {
+
+    .jogos {
+        grid-template-columns: 1fr;
+    }
+
+    nav {
+        width: 100%;
+
+        overflow-x: auto;
+    }
+
+}
